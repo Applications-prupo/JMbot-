@@ -30,21 +30,7 @@ client.once("ready", () => {
       await rest.put(Routes.applicationCommands(client.user.id), {
         body: commandarray,
       });
-     presence: {
 
-    activities: [{
-
-      name: "JMbot™",
-
-      type: 0
-
-    }],
-
-    status: 'dnd'
-
-  }
-
-});
       console.log("Successfully reloaded application (/) commands.");
     } catch (error) {
       console.error(error);
