@@ -57,4 +57,12 @@ client.on("interactionCreate", async interaction => {
   }
 });
 
+client.on('ready', async () => {
+    console.log("I'm ready")
+    client.user.setActivity(`Jmbot™`, {
+        type: "PLAYING"
+    })
+    broadcast = client.voice.createBroadcast();
+})
+
 client.login(token); // Login to the bot client via the defined "token" string.
