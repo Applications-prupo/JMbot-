@@ -62,7 +62,6 @@ client.on('ready', async () => {
     client.user.setActivity(`Jmbot™`, {
         type: "PLAYING"
     })
-    broadcast = client.voice.createBroadcast();
-})
+
 
 client.login(token); // Login to the bot client via the defined "token" string.
